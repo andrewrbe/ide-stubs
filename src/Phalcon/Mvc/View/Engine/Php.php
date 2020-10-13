@@ -9,8 +9,13 @@
  */
 namespace Phalcon\Mvc\View\Engine;
 
+use Admin\Backend\Models\ClinicsMembers;
+use Admin\Cabinet\Models\Clinics;
+
 /**
  * Adapter to use PHP itself as templating engine
+ * @property Clinics $clinic
+ * @property ClinicsMembers $clinicMember
  */
 class Php extends \Phalcon\Mvc\View\Engine\AbstractEngine
 {
