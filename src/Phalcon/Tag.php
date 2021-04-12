@@ -855,4 +855,5 @@ class Tag
     final protected static function inputFieldChecked(string $type, $parameters): string
     {
     }
+
 }

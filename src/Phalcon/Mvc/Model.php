@@ -699,7 +699,7 @@ abstract class Model extends AbstractInjectionAware implements \Phalcon\Mvc\Enti
      *     ],
      *     'hydration' => null
      * ]
-     * @return ResultsetInterface
+     * @return ResultsetInterface|static[]
      */
     public static function find($parameters = null): ResultsetInterface
     {
@@ -788,7 +788,7 @@ abstract class Model extends AbstractInjectionAware implements \Phalcon\Mvc\Enti
      *     ],
      *     'hydration' => null
      * ]
-     * @return bool|\Phalcon\Mvc\ModelInterface
+     * @return bool|\Phalcon\Mvc\ModelInterface|static
      */
     public static function findFirst($parameters = null)
     {

@@ -29,7 +29,7 @@ use Phalcon\Session\BagInterface;
  * @property \Phalcon\Db\Adapter\AdapterInterface $db
  * @property \Phalcon\Security $security
  * @property \Phalcon\Crypt|\Phalcon\CryptInterface $crypt
- * @property \Phalcon\Tag $tag
+ * @property \Helper $tag
  * @property \Phalcon\Escaper|\Phalcon\Escaper\EscaperInterface $escaper
  * @property \Phalcon\Annotations\Adapter\Memory|\Phalcon\Annotations\Adapter $annotations
  * @property \Phalcon\Mvc\Model\Manager|\Phalcon\Mvc\Model\ManagerInterface $modelsManager
@@ -58,6 +58,7 @@ abstract class Injectable implements \Phalcon\Di\InjectionAwareInterface
      */
     public function __get(string $propertyName)
     {
+
     }
 
     /**

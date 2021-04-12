@@ -9,6 +9,10 @@
  */
 namespace Phalcon\Di;
 
+use Admin\Cabinet\Models\ClinicsMembers;
+use Admin\Cabinet\Models\CabinetUsers;
+use Admin\Cabinet\Models\Clinics;
+
 /**
  * Interface for Phalcon\Di
  */
@@ -134,4 +138,14 @@ interface DiInterface extends \ArrayAccess
      * @return ServiceInterface
      */
     public function setShared(string $name, $definition): ServiceInterface;
+
+    public function getClinic(): Clinics;
+    public function getS3(): \Aws\S3\S3Client;
+    public function getSes(): \Aws\Ses\SesClient;
+    public function getClinicMember(): ClinicsMembers;
+    public function getCabinetUser(): CabinetUsers;
+    public function getRequest(): \Phalcon\Http\Request;
+    public function getDb(): \Phalcon\Db\Adapter\Pdo\Mysql;
+    public function getConfig(): \Phalcon\Db\Adapter\Pdo\Mysql;
+    public function getRedis(): \Predis\Client;
 }
